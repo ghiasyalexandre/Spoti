@@ -37,3 +37,22 @@
 .read-the-docs {
   color: #888;
 }
+
+.gradient-bg {
+  background: rgb(0,0,0);
+  background: linear-gradient(349deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 50%, rgba(30,30,30,1) 100%);
+}
+
+.card-hover:hover {
+  background: #282828;
+}
+
+.card-gradient {
+  background: rgb(0,0,0);
+  background: linear-gradient(349deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 50%, rgba(24,24,24,1) 100%);
+}
+
+.gradient-hover:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(349deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 50%, rgba(30,30,30,1) 100%);
+}

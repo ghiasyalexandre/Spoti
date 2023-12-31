@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function NavBar() {
+export default function Playlist() {
   return <div></div>;
 }
