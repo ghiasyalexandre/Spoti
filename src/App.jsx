@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
 import Home from "./components/Home";
-
+import SearchNav from "./components/SearchNav";
 
 import "./App.css";
 
@@ -90,23 +90,21 @@ function App() {
           </div>
 
           <div className="flex justify-between m-2 text-xs sm:text-base md:text-xl md:text-xl text-gray-500 drop-shadow-md shadow-md">
-        <div className="items-center">
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </div>
-        <div className="flex space-x-2 items-center hover:font-semibold text-xs sm:text-base md:text-xl ">
-          <h3>Recents</h3>
-          <FontAwesomeIcon
-            icon={faListUl}
-            style={{ "hover:fontStyle": "bold" }}
-          />
-        </div>
-      </div>
+            <div className="items-center">
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </div>
+            <div className="flex space-x-2 items-center hover:font-semibold text-xs sm:text-base md:text-xl ">
+              <h3>Recents</h3>
+              <FontAwesomeIcon
+                icon={faListUl}
+                style={{ "hover:fontStyle": "bold" }}
+              />
+            </div>
+          </div>
 
-      <div className="h-[78%] w-auto overflow-y-auto whitespace-nowrap">
-          <RecentBar />
-
-      </div>
-
+          <div className="h-[78%] w-auto overflow-y-auto whitespace-nowrap">
+            <RecentBar />
+          </div>
         </div>
       </div>
 
@@ -114,8 +112,6 @@ function App() {
         className=" w-2/3 lg:w-5/6"
         style={{ "background-color": "#101010" }}
       >
-        <Navbar />
-
         <div className=" h-[95%] overflow-y-auto no-scrollbar bg-gradient">
           <div className="m-2 mr-4">
             <div className=" p-2" style={{ "background-color": "#1e1e1e" }}>
@@ -127,7 +123,8 @@ function App() {
                 <Route path="/podcast" element={<Podcast />} />
                 <Route path="/search" element={<Search />} />
               </Routes>
-<br /><br />
+              <br />
+              <br />
               <Footer />
             </div>
           </div>
